@@ -1,0 +1,107 @@
+.hotdeals_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+
+  position: relative;
+}
+.hotdeals_inner {
+  width: 100%;
+  display: flex;
+  height: 35rem;
+}
+
+.left_wrapper {
+  width: 30%;
+  background: linear-gradient(180deg, #ed1820 0%, #1e1e1e 100%);
+  /* height: 35rem; */
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* gap: 19rem; */
+}
+.deals_texts {
+  padding: 1rem 4rem 0 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.deals_texts h1 {
+  color: #f5f5f5;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+
+  border-bottom: 2px solid #ffffff;
+}
+.deals_texts h3 {
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.button_container {
+  display: inline-flex;
+  position: absolute;
+  bottom: 4rem;
+
+  /* justify-content: center; */
+  align-items: center;
+  padding-left: 6rem;
+}
+.button_container button {
+  padding: 0.4rem;
+  border: 1px solid #ed1820;
+
+  background: #f5f5f5;
+
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #4b2620;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.right_wrapper {
+  width: 70%;
+  /* background-color: #110f0f; */
+
+  background-image: url("../../../assets/newtemple.png");
+  /* object-fit: cover; */
+  /* background-size: contain; */
+  /* height: 35rem; */
+}
+.right_wrapper img {
+  /* height: 35rem; */
+  width: 100%;
+
+  height: 35rem;
+  opacity: 0.4;
+}
+
+.hotdeals_outer {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 80%;
+  /* top: 50%;
+  left: 50%; */
+}
+
+.hotdeals_outer h1 {
+  color: black;
+}

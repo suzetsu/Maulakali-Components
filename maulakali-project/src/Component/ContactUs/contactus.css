@@ -1,0 +1,15 @@
+.perspective-container {
+  perspective: 600px; /* Set the perspective value */
+}
+
+.perspective-image {
+  width: 300px; /* Set the initial width */
+  height: 200px; /* Set the initial height */
+  transition: transform 0.5s; /* Add a smooth transition effect */
+  transform: scale(1) rotateY(0deg); /* Apply scale and rotation initially */
+  background-image: url("../../assets/image1.jpg");
+}
+
+.perspective-container:hover .perspective-image {
+  transform: scale(1.5) rotateY(0deg); /* Apply scale on hover */
+}

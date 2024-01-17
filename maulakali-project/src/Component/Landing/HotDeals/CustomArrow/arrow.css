@@ -1,0 +1,4 @@
+.sample-prev-arrow::before {
+  content: "";
+  background-color: aqua;
+}
