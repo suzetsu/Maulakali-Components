@@ -1,10 +1,11 @@
 import React from "react";
 import "./hotdeals.css";
 import SliderComponent from "./SliderComponent";
-import temple from "../../../assets/temple.jpg";
+
 
 const Hotdeals = () => {
   return (
+    <>
     <div className="hotdeals_container">
       <div className="hotdeals_inner">
         <div className="left_wrapper">
@@ -21,7 +22,9 @@ const Hotdeals = () => {
       <div className="hotdeals_outer">
         <SliderComponent />
       </div>
-    </div>
+      </div>
+      
+      </>
   );
 };
 

@@ -1,0 +1,293 @@
+@mixin bold-fonts {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  //   line-height: 5rem;
+  color: #f5f5f5;
+}
+@mixin outerred-button {
+  display: flex;
+  font-family: Poppins;
+  padding: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ed1820;
+  background: #f5f5f5;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+@mixin image-style {
+  // width: 598px;
+  height: 490px;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+}
+@mixin temple-description {
+  background: rgba(0, 0, 0, 0.7);
+  width: 15rem;
+  height: 9rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin description-paragraph {
+  color: #f5f5f5;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  padding: 0.5rem;
+}
+.container-inline {
+  padding-inline: 3rem;
+}
+.temple-container {
+  display: flex;
+  justify-content: center;
+  padding-block: 3rem;
+  background: linear-gradient(180deg, #ed1820 0%, #1e1e1e 100%);
+
+  .temple-container-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+
+    button {
+      width: 9rem;
+      @include outerred-button;
+      position: absolute;
+      bottom: 17rem;
+      left: 0;
+    }
+    .temple-container-left {
+      width: 50%;
+      display: flex;
+      justify-content: left;
+      flex-direction: column;
+      // position: relative;
+      // left: 3.65rem;
+      // top: 2rem;
+
+      &-inside {
+        h1 {
+          width: 25rem;
+          font-size: 4rem;
+          @include bold-fonts;
+        }
+        div {
+          position: relative;
+          .templeimg {
+            @include image-style;
+            img {
+              object-fit: cover;
+              height: 100%;
+              width: 100%;
+            }
+          }
+          .temple-description-1 {
+            bottom: -5rem;
+            right: 0;
+            @include temple-description;
+
+            p {
+              @include description-paragraph;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-right {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-top: 4rem;
+
+    // width: 50%;
+
+    &-firstdiv {
+      position: relative;
+      .templeimg {
+        @include image-style;
+        top: 5rem;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .temple-description-2 {
+        @include temple-description;
+        top: -2.5rem;
+        left: 0;
+      }
+      p {
+        @include description-paragraph;
+      }
+    }
+    &-seconddiv {
+      position: relative;
+      .templeimg {
+        @include image-style;
+        top: 5rem;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .temple-description-3 {
+        @include temple-description;
+        top: 0;
+        right: 0;
+      }
+      p {
+        @include description-paragraph;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .temple-container-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    // position: relative;
+    overflow-x: hidden !important;
+    // padding-bottom: 2rem;
+    button {
+      position: static !important;
+      // bottom: 0rem !important;
+      // left: 14rem !important;
+    }
+  }
+
+  .temple-container-left {
+    // left: 2rem !important;
+    width: 100% !important;
+  }
+  .temple-container-right {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    // right: 0;
+  }
+
+  .temple-container-left-inside > h1 {
+    width: 30rem !important;
+    font-size: 3rem !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .temple-container {
+    padding-block: 1rem;
+  }
+  .temple-container-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    padding: 0 !important;
+    // position: relative;
+    // width: 100%;
+    // overflow-x: hidden !important;
+    // height: auto !important;
+    // padding: 0;
+    button {
+      position: static !important;
+      width: 8rem !important;
+      height: 2rem !important;
+    }
+  }
+  .temple-container-left {
+    left: 2.3rem !important;
+  }
+
+  .temple-container-left {
+    .temple-container-left-inside {
+      h1 {
+        width: 20rem !important;
+        font-size: 1.5rem !important;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        .templeimg {
+          height: 14rem !important;
+          img {
+          }
+        }
+        .temple-description-1 {
+          width: 8rem !important;
+          height: 4.5rem !important;
+          top: 0;
+          right: 3rem !important;
+          > p {
+            font-size: 8px !important;
+            font-style: normal;
+            font-weight: 400 !important;
+            line-height: 10px !important;
+            padding: 0.2rem !important;
+          }
+        }
+      }
+    }
+  }
+  .temple-container-right {
+    margin: 0;
+    &-firstdiv {
+      div {
+        display: flex;
+        justify-content: center;
+        .templeimg {
+          height: 14rem !important;
+          img {
+          }
+        }
+      }
+      .temple-description-2 {
+        width: 8rem !important;
+        height: 4.5rem !important;
+        left: 3rem !important;
+        top: 0 !important;
+        > p {
+          font-size: 8px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 10px;
+          padding: 0.2rem;
+        }
+      }
+    }
+    &-seconddiv {
+      div {
+        display: flex;
+        justify-content: center;
+        .templeimg {
+          height: 14rem !important;
+          img {
+          }
+        }
+      }
+      .temple-description-3 {
+        width: 8rem !important;
+        height: 4.5rem !important;
+        right: 3rem;
+
+        > p {
+          font-size: 8px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 10px;
+          padding: 0.2rem;
+        }
+      }
+    }
+  }
+}

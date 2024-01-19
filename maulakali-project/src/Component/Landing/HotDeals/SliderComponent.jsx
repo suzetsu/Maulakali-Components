@@ -62,8 +62,8 @@ const SliderComponent = () => {
       <Slider {...settings} ref={slider} draggable={true} autoplay>
         <div className="slider_component_div">
           <div className="card-div">
-            <div className="image-div">
-              <img src={insideimg} alt="aa" />
+            <div className="sliderimage-div">
+              <img src={insideimg} alt="aa" className="hotdealimg" />
             </div>
             <div className="text-div">
               <h1>20% OFF</h1>
@@ -74,8 +74,8 @@ const SliderComponent = () => {
         </div>
         <div className="slider_component_div">
           <div className="card-div">
-            <div className="image-div">
-              <img src={insideimg} alt="aa" />
+            <div className="sliderimage-div">
+              <img src={insideimg} alt="aa" className="hotdealimg" />
             </div>
             <div className="text-div">
               <h1>20% OFF</h1>
@@ -86,8 +86,8 @@ const SliderComponent = () => {
         </div>
         <div className="slider_component_div">
           <div className="card-div">
-            <div className="image-div">
-              <img src={insideimg} alt="aa" />
+            <div className="sliderimage-div">
+              <img src={insideimg} alt="aa" className="hotdealimg" />
             </div>
             <div className="text-div">
               <h1>20% OFF</h1>
@@ -98,8 +98,8 @@ const SliderComponent = () => {
         </div>
         <div className="slider_component_div">
           <div className="card-div">
-            <div className="image-div">
-              <img src={insideimg} alt="aa" />
+            <div className="sliderimage-div">
+              <img src={insideimg} alt="aa" className="hotdealimg" />
             </div>
             <div className="text-div">
               <h1>20% OFF</h1>
