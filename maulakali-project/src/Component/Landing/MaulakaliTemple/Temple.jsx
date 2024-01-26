@@ -56,7 +56,7 @@ const Temple = () => {
             </div>
           </div>
         </div>
-        <button>Discover More</button>
+        <button className="button-global">Discover More</button>
       </div>
     </div>
   );

@@ -12,20 +12,15 @@ import ContactUs from "./Component/ContactUs/Contact";
 import Temple from "./Component/Landing/MaulakaliTemple/Temple";
 import Newsletter from "./Component/Landing/NewsLetter/Newsletter";
 import Components from "./Components";
+import HotdealsContent from "./Component/HotDeals/HotdealsContent";
+import Layout from "./Component/Routes/Layout";
+import MainRoutes from "./Component/Routes/MainRoutes";
 
 export function App() {
+  const componentHeaders = {};
   return (
     <Router>
-      <Routes>
-        <Route path="" element={<Hotdeals />} />
-        <Route path="/activities" element={<ActivitiesSlider />} />
-        <Route path="/packages" element={<Packages />} />
-        <Route path="/book-now" element={<Booknow />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/maulakali-temple" element={<Temple />} />
-        <Route path="/newsletter" element={<Newsletter />} />
-        <Route path="/components" element={<Components />} />
-      </Routes>
+      <MainRoutes />
     </Router>
   );
 }

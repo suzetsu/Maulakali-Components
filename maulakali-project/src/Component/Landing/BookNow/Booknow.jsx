@@ -18,22 +18,29 @@ const Booknow = () => {
   return (
     <div className="book_container">
       <div className="left_content">
-        <img src={line2} className="line2" />
-        <img src={outrect} alt=".." className="rectimg" />
-        <img src={line1} className="line1" />
-        <div className="booknow_text">
-          <h2>
-            BOOK NOW <span>&</span>
-          </h2>
-          <h1>GET 20 % OFF</h1>
-          <h3>MAULAKLAI CABLECAR</h3>
+        <div>
+          <img src={line2} className="line2" />
+          <img src={outrect} alt=".." className="rectimg" />
+          <img src={line1} className="line1" />
         </div>
-        <div className="description">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod mpor incididunt ut labore et.
-          </p>
-          <button>Book Now</button>
+
+        <div className="booknow_texts">
+          <div className="booknow_text">
+            <h2>
+              BOOK NOW <span>&</span>
+            </h2>
+            <h1>GET 20 % OFF</h1>
+            <h3>MAULAKLAI CABLECAR</h3>
+          </div>
+        </div>
+        <div className="descriptions">
+          <div className="description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod mpor incididunt ut labore et.
+            </p>
+            <button>Book Now</button>
+          </div>
         </div>
       </div>
       <div className="right_content">

@@ -6,6 +6,7 @@
 .left_content {
   padding: 3rem 3rem;
   width: 45%;
+  position: relative;
 }
 .right_content {
   padding-top: 2rem;
@@ -88,23 +89,24 @@
   position: relative;
   bottom: 1rem;
 }
-.booknow_text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
+.booknow_texts {
+  position: relative;
+
   /* z-index: 100; */
 }
-.booknow_text h2 {
+.booknow_text {
   position: absolute;
-  bottom: 23.5rem;
-  left: 12rem;
+  bottom: 11.3rem;
+  left: 6rem;
+}
+.booknow_text h2 {
   color: #1e1e1e;
 
   font-family: Poppins;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 2rem;
   margin: 0;
   padding: 0;
 }
@@ -114,14 +116,11 @@
   font-size: 4.5rem;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1rem;
   margin: 0;
   padding: 0;
 }
 .booknow_text h1 {
-  position: absolute;
-  bottom: 19.9rem;
-  left: 11.5rem;
   color: #1e1e1e;
   font-family: Poppins;
   font-size: 3.8rem;
@@ -130,21 +129,22 @@
   line-height: normal;
 }
 .booknow_text h3 {
-  position: absolute;
-  bottom: 18rem;
-  left: 12rem;
   color: #1e1e1e;
   font-family: Poppins;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.3rem;
+}
+.descriptions {
+  
+  position: relative;
 }
 .description {
-  width: 15rem;
   position: absolute;
-  bottom: 8.5rem;
-  left: 18rem;
+  bottom: 1rem;
+  left: 15rem;
+  width: 14rem;
 }
 
 .description button {

@@ -109,17 +109,17 @@ const SliderComponent = () => {
           </div>
         </div>
       </Slider>
-      <img
+      {/* <img
         src={right}
         onClick={() => slider?.current?.slickNext()}
         style={{
           position: "relative",
           top: "-10.5rem",
-          // left: "-3rem",
+          
           left: "69.5rem",
           cursor: "pointer",
         }}
-      />
+      /> */}
     </>
   );
 };

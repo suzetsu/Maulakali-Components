@@ -1,0 +1,68 @@
+.cablecar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+}
+.cablecar-container-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+.cablecar-container-leftdiv {
+  width: 50%;
+  position: relative;
+}
+.cablecar-container-leftdiv .firstcablecar-image {
+  position: relative;
+  top: -6rem;
+  bottom: 0;
+  z-index: 1;
+  left: 2rem;
+}
+.cablecar-container-leftdiv .secondcablecar-image {
+  position: absolute;
+  z-index: 1;
+  right: 2.9rem;
+  bottom: -8.4rem;
+}
+.cablecar-container-rightdiv {
+  width: 50%;
+  padding: 2rem 0rem 2rem 4rem;
+  position: relative;
+}
+.cablecar-container-rightdiv .first-cableicon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cablecar-container-rightdiv .second-cableicon {
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+}
+.cablecar-container-rightdiv .cablecar-text-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cablecar-container-rightdiv .cablecar-text-div h1 {
+  color: #1e1e1e;
+  font-family: Poppins;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: normal;
+  margin: -1.5rem 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.cablecar-container-rightdiv .cablecar-text-div p {
+  color: #4b2620;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}/*# sourceMappingURL=cablecar.css.map */

@@ -71,6 +71,7 @@
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .right_wrapper {

@@ -7,17 +7,23 @@ import Booknow from "./Component/Landing/BookNow/Booknow";
 import ContactUs from "./Component/ContactUs/Contact";
 import Temple from "./Component/Landing/MaulakaliTemple/Temple";
 import Newsletter from "./Component/Landing/NewsLetter/Newsletter";
+import Cablecar from "./Component/Landing/MaulakaliCable/Cablecar";
+import Lifestyle from "./Component/Landing/Lifestyle/Lifestyle";
+import Resort from "./Component/Landing/Resort/Resort";
 
 const Components = () => {
   return (
-      <div style={{
-        width: '100vw',
-    }}>
+    <div
+     
+    >
       <Hotdeals />
       <ActivitiesSlider />
       {/* <Booknow /> */}
       <Temple />
+      {/* <Cablecar /> */}
       <Packages />
+      <Lifestyle />
+      <Resort/>
       <Newsletter />
     </div>
   );

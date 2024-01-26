@@ -1,0 +1,265 @@
+.container-inline {
+  padding-inline: 3rem;
+}
+
+.temple-container {
+  display: flex;
+  justify-content: center;
+  padding-block: 3rem;
+  background: linear-gradient(180deg, #ed1820 0%, #1e1e1e 100%);
+}
+.temple-container .temple-container-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+}
+.temple-container .temple-container-div button {
+  width: 9rem;
+  display: flex;
+  font-family: Poppins;
+  padding: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ed1820;
+  background: #f5f5f5;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  bottom: 17rem;
+  left: 0;
+}
+.temple-container .temple-container-div .temple-container-left {
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+.temple-container .temple-container-div .temple-container-left-inside h1 {
+  width: 25rem;
+  font-size: 4rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  color: #f5f5f5;
+}
+.temple-container .temple-container-div .temple-container-left-inside div {
+  position: relative;
+}
+.temple-container .temple-container-div .temple-container-left-inside div .templeimg {
+  height: 490px;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+}
+.temple-container .temple-container-div .temple-container-left-inside div .templeimg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.temple-container .temple-container-div .temple-container-left-inside div .temple-description-1 {
+  bottom: -5rem;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 15rem;
+  height: 9rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.temple-container .temple-container-div .temple-container-left-inside div .temple-description-1 p {
+  color: #f5f5f5;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  padding: 0.5rem;
+}
+.temple-container-right {
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.temple-container-right-firstdiv {
+  position: relative;
+}
+.temple-container-right-firstdiv .templeimg {
+  height: 490px;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+  top: 5rem;
+}
+.temple-container-right-firstdiv .templeimg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.temple-container-right-firstdiv .temple-description-2 {
+  background: rgba(0, 0, 0, 0.7);
+  width: 15rem;
+  height: 9rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -2.5rem;
+  left: 0;
+}
+.temple-container-right-firstdiv p {
+  color: #f5f5f5;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  padding: 0.5rem;
+}
+.temple-container-right-seconddiv {
+  position: relative;
+}
+.temple-container-right-seconddiv .templeimg {
+  height: 490px;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+  top: 5rem;
+}
+.temple-container-right-seconddiv .templeimg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.temple-container-right-seconddiv .temple-description-3 {
+  background: rgba(0, 0, 0, 0.7);
+  width: 15rem;
+  height: 9rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+}
+.temple-container-right-seconddiv p {
+  color: #f5f5f5;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .temple-container-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    overflow-x: hidden !important;
+  }
+  .temple-container-div button {
+    position: static !important;
+  }
+  .temple-container-left {
+    width: 100% !important;
+  }
+  .temple-container-right {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+  .temple-container-left-inside > h1 {
+    width: 30rem !important;
+    font-size: 3rem !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .temple-container {
+    padding-block: 1rem;
+  }
+  .temple-container-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    padding: 0 !important;
+  }
+  .temple-container-div button {
+    position: static !important;
+    width: 8rem !important;
+    height: 2rem !important;
+  }
+  .temple-container-left {
+    left: 2.3rem !important;
+  }
+  .temple-container-left .temple-container-left-inside h1 {
+    width: 20rem !important;
+    font-size: 1.5rem !important;
+  }
+  .temple-container-left .temple-container-left-inside div {
+    display: flex;
+    justify-content: center;
+  }
+  .temple-container-left .temple-container-left-inside div .templeimg {
+    height: 14rem !important;
+  }
+  .temple-container-left .temple-container-left-inside div .temple-description-1 {
+    width: 8rem !important;
+    height: 4.5rem !important;
+    top: 0;
+    right: 3rem !important;
+  }
+  .temple-container-left .temple-container-left-inside div .temple-description-1 > p {
+    font-size: 8px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 10px !important;
+    padding: 0.2rem !important;
+  }
+  .temple-container-right {
+    margin: 0;
+  }
+  .temple-container-right-firstdiv div {
+    display: flex;
+    justify-content: center;
+  }
+  .temple-container-right-firstdiv div .templeimg {
+    height: 14rem !important;
+  }
+  .temple-container-right-firstdiv .temple-description-2 {
+    width: 8rem !important;
+    height: 4.5rem !important;
+    left: 3rem !important;
+    top: 0 !important;
+  }
+  .temple-container-right-firstdiv .temple-description-2 > p {
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+    padding: 0.2rem;
+  }
+  .temple-container-right-seconddiv div {
+    display: flex;
+    justify-content: center;
+  }
+  .temple-container-right-seconddiv div .templeimg {
+    height: 14rem !important;
+  }
+  .temple-container-right-seconddiv .temple-description-3 {
+    width: 8rem !important;
+    height: 4.5rem !important;
+    right: 3rem;
+  }
+  .temple-container-right-seconddiv .temple-description-3 > p {
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+    padding: 0.2rem;
+  }
+}/*# sourceMappingURL=temple.css.map */

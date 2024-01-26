@@ -55,11 +55,12 @@
     position: relative;
 
     button {
-      width: 9rem;
+      // width: 9rem;
       @include outerred-button;
       position: absolute;
       bottom: 17rem;
       left: 0;
+      // font-size: 0.8rem;
     }
     .temple-container-left {
       width: 50%;
